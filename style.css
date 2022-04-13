@@ -1,0 +1,111 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.img1 {
+  height: 100vh;
+  background: navy url(./img/Universe.jpg) center center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.round {
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  background: linear-gradient(red, yellow, green);
+  position: relative;
+  top: -100px;
+  left: 80px;
+}
+
+.hero {
+  width: 450px;
+  background: rgba(0, 0, 0, 0.485);
+  padding: 2rem;
+  border-radius: 5px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  z-index: 10;
+  backdrop-filter: blur(5px);
+  border: 2px solid rgba(255, 255, 255, 0.408);
+}
+
+section {
+  width: 80%;
+  margin: auto;
+  /* It will keep the section in center because percent % look for the parent */
+}
+
+.img2 {
+  background: url(./img/Universe.jpg) no-repeat center center;
+  background-size: cover;
+  height: 60vh;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.img3 {
+  background: url(./img/Universe.jpg) no-repeat center center;
+  background-size: cover;
+  height: 60vh;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.title {
+  /* height: 200px;
+  width: 300px; or you can use padding */
+  padding: 20px 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 40px;
+  border-radius: 5px;
+  background: rgba(219, 241, 178, 0.485);
+  text-transform: uppercase;
+  letter-spacing: 10px;
+}
+
+.img1,
+.img2,
+.img3 {
+  background-attachment: fixed;
+}
+.down-arrow {
+  font-size: 3rem;
+  font-weight: bolder;
+  position: absolute;
+  bottom: 80px;
+  color: red;
+  transform: rotate(90deg);
+  animation: go-down 1s infinite;
+}
+
+@keyframes go-down {
+  0% {
+    bottom: 50px;
+    color: blue;
+  }
+  50% {
+    color: yellowgreen;
+  }
+  100% {
+    bottom: 10px;
+  }
+}
